@@ -43,8 +43,7 @@ namespace CosmosStaticDataUploader
             bool withErrors = true;
             if (args == null || args.Length != 2)
             {
-                WriteLine($@"Usage:
-    workingDir Env
+                WriteLine($@"Usage: workingDir Env
 
     workingDir - Folder that contains the documents to upload.
     Env - Environment. Supported values are dependent on settings defined on {configFile} file.
