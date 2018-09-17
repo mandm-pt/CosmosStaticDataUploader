@@ -1,4 +1,5 @@
 # Cosmos Static Data Uploader
+[![Build status](https://ci.appveyor.com/api/projects/status/xkd82di0v4tq3xfy?svg=true)](https://ci.appveyor.com/project/mandm-pt/cosmosstaticdatauploader)
 
 Basic tool that uploads multiple object files into Azure Cosmos database.
 
