@@ -58,9 +58,15 @@ namespace CosmosStaticDataUploader
                 string fileContents = await File.ReadAllTextAsync(file);
                 dynamic @object = JObject.Parse(fileContents);
 
-                var created = await client.CreateDocumentAsync(collectionLink, @object);
-
-                WriteLine($"\tFile uploaded - {Path.GetFileName(file)}", ConsoleColor.Blue);
+                try
+                {
+                    var created = await client.UpsertDocumentAsync(collectionLink, @object);
+                    WriteLine($"\tFile upserted - {Path.GetFileName(file)}", ConsoleColor.Green);
+                }
+                catch (Exception ex)
+                {
+                    WriteLine($"\tThere was a problem upserting the following file: {Path.GetFileName(file)}", ConsoleColor.Red);
+                }
             }
         }
     }
