@@ -6,7 +6,7 @@
 pool:
   vmImage: 'VS2017-Win2016'
 
-name: ${{ '$(solution)' }}
+name: ${{ $(solution) }}
 
 steps:
 - task: NuGetToolInstaller@0
