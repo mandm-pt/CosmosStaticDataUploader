@@ -11,7 +11,7 @@ variables:
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 
-name: ${$(Formula)}
+name: ${{$(Formula)}}
 
 steps:
 - task: NuGetToolInstaller@0
