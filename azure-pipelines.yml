@@ -10,7 +10,6 @@ variables:
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
-
   name:
     ${{ if eq('true', 'true') }}:
       name: xx
