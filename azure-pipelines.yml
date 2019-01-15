@@ -11,7 +11,7 @@ variables:
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 
-name: test
+name: $(ReleaseNumber).$(Build.BuildId)
 
 steps:
 - task: NuGetToolInstaller@0
