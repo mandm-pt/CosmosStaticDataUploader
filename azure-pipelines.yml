@@ -11,7 +11,7 @@ variables:
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 
-name: ${if (true) { 1 } else { 0 }}
+name: ${{Formula}}
 
 steps:
 - task: NuGetToolInstaller@0
