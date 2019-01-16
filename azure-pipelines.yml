@@ -8,7 +8,7 @@ pool:
 
 steps:
 - powershell: 'test'
-  workingDirectory: src/
+  workingDirectory: /
   displayName: 'Update build name'
   
 - task: NuGetCommand@2
