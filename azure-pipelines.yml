@@ -6,7 +6,7 @@
 pool:
   vmImage: 'VS2017-Win2016'
 
-name: if ($env:ReleaseNumber){
+if ($env:ReleaseNumber){
   Write-Host "##vso[build.updatebuildnumber]$env:ReleaseNumber.$env:Build_BuildId"
   }
 else{
