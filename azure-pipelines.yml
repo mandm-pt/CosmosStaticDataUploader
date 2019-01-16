@@ -10,8 +10,7 @@ steps:
 - task: PowerShell@2
   displayName: 'Update build name'
   inputs:
-    targetType: ./
-    filePath: 'test.ps1'
+    filePath: './test.ps1'
   
 - task: NuGetCommand@2
   inputs:
