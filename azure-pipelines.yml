@@ -11,7 +11,7 @@ steps:
   displayName: 'Update build name'
   inputs:
     targetType: ./
-    filePath: 'test.ps'
+    filePath: 'test.ps1'
   
 - task: NuGetCommand@2
   inputs:
