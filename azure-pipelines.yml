@@ -7,9 +7,11 @@ pool:
   vmImage: 'VS2017-Win2016'
 
 steps:
-- powershell: 'test'
-  workingDirectory: /
+- task: PowerShell@2
   displayName: 'Update build name'
+  inputs:
+    targetType: ./
+    filePath: 'test.ps'
   
 - task: NuGetCommand@2
   inputs:
